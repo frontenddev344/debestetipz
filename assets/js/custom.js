@@ -29,11 +29,21 @@ $('.moreless-button').click(function() {
     }
   });
 
+  // $('.morelesss-button').click(function() {
+  //   $('.moretextt').slideToggle();
+  //   if ($('.morelesss-button').text() == "Read more") {
+  //     $(this).text("Read less")
+  //   } else {
+  //     $(this).text("Read more")
+  //   }
+  // });
+
   $('.morelesss-button').click(function() {
-    $('.moretextt').slideToggle();
-    if ($('.morelesss-button').text() == "Read more") {
-      $(this).text("Read less")
+    var $this = $(this);
+    $this.closest('.recommended-text').find('.moretextt').slideToggle(); // Toggle the specific text associated with this button
+    if ($this.text() == "lees meer") {
+      $this.text("lees minder");
     } else {
-      $(this).text("Read more")
+      $this.text("lees meer");
     }
   });

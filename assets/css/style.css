@@ -104,7 +104,7 @@ header ul li a
     text-decoration: none;
     color: #fff;
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     transition: all 0.3s linear;
     display: block;
@@ -124,11 +124,11 @@ header.sticky ul li a.active{
 .menuToggle
 {
     position: absolute;
-    top: 5px;
-    right: 100px;
+    /* top: 5px; */
+    right: 40px;
     width: 50px;
     height: 50px;
-    background: #000 url(https://frezaeistudio.ir/wp-content/uploads/2020/12/toggle.png);
+    background:  url(../images/menu.png);
     z-index: 2;
     background-size: 30px;
     background-repeat: no-repeat;
@@ -139,18 +139,18 @@ header.sticky ul li a.active{
 }
 header.sticky .menuToggle
 {
-    filter: invert(1);
+    /* filter: invert(1); */
 
 }
 .menuToggle.active
 {
-    background: #000 url(https://frezaeistudio.ir/wp-content/uploads/2020/12/close.png);
+    background: url(../images/close.png);
     z-index: 3;
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    filter: invert(1);
+    /* filter: invert(1); */
     
 }
 /* header section css end */
@@ -189,30 +189,30 @@ opacity: 0.4;
 }
 
 .banner-text h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
     color: #fff;
     font-weight: 700;
     text-align: center;
 }
 .banner-text p {
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 0;
     text-align: center;
 }
 .top-text p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #1f1f1f;
 }
 .moretext {
     display: none;
   }
-  a.moreless-button, a.morelesss-button {
+  a.moreless-button, a.morelesss-button, .visit-btns a {
     padding: 10px 30px;
     background-color: #00b8a9;
     display: inline-block;
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
     border: 1px solid #00b8a9;
@@ -241,7 +241,7 @@ opacity: 0.4;
     bottom: 15px;
     left: 15px;
     margin-bottom: 0;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 500;
     color: #fff;
     text-transform: capitalize;
@@ -274,13 +274,13 @@ opacity: 0.4;
     object-fit: cover;
 }
 .recommended-text h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 600;
     margin-bottom: 10px ;
     color: #000;
 }
 .recommended-text p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #1f1f1f;
     margin-bottom: 10px;
 }
@@ -291,7 +291,7 @@ opacity: 0.4;
 }
 .recommended-text ul li{
     padding: 2px 0;
-    font-size: 16px;
+    font-size: 1rem;
     color: #1f1f1f;
 }
 .moretextt {
@@ -302,14 +302,35 @@ opacity: 0.4;
     background-color: transparent;
     color: #00b8a9;
     border: 1px solid #00b8a9;
+
+}
+.visit-btns{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
 }
 .recommended-wrap {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 8px;
     overflow: hidden;
+    height: 100%;
+    position: relative;
 }
 .recommended-text {
-    padding: 20px;
+    padding: 20px 20px 70px;
+}
+.recommended-sec .col-md-6 {
+    margin: 12px 0;
+}
+.top-text h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+.guid-heading{
+    margin-top: 30px;
 }
 /* Recommended  section css end */
 
@@ -363,7 +384,7 @@ opacity: 0.4;
     opacity: 0.3;
 }
 .form-heading h3 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     text-align: center;
     color: #fff;
     margin-bottom: 20px;
@@ -421,10 +442,10 @@ opacity: 0.4;
 
 .service-item h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .service-item p {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 0;
     margin-top: 5px;
 }
@@ -448,7 +469,7 @@ opacity: 0.4;
     color: #ffff;
 }
 .site-heading h2 {
-    font-size: 35px;
+    font-size: 2.1875rem;
     text-align: center;
     font-weight: 700;
     margin-bottom: 30px;
@@ -491,7 +512,7 @@ opacity: 0.4;
 .accordion-button {
     color: #ffffff;
     background-color: #00b8a9;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .faq-wrap {
     max-width: 1000px;
@@ -516,7 +537,7 @@ opacity: 0.4;
 .social-links ul li a {
     height: 45px;
     width: 45px;
-    font-size: 20px;
+    font-size: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -534,7 +555,7 @@ opacity: 0.4;
 }
 
 .footer-links ul li a {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #000;
 }
 .copy-right {
@@ -547,7 +568,38 @@ opacity: 0.4;
     
 }
 .copy-right p{
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 0;
 }
 /* footer section css end */
+
+/* sub pages css start */
+section.banner.sub-banner {
+    height: 600px;
+}
+.sub-banner .banner-text h1 {
+    font-size: 2.8125rem;
+    margin-bottom: 0;
+}
+.privacy-wrap p{
+    font-size: 1rem;
+    color: #1f1f1f;
+    margin-bottom: 10px;
+}
+.privacy-wrap p strong{
+    color: #000;
+}
+.privacy-wrap ul{
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+.privacy-wrap ul li{
+font-size: 1rem;
+color: #1f1f1f;
+padding: 2px 0;
+}
+.privacy-wrap{
+    padding: 20px 0;
+}
+/* sub pages css end */
