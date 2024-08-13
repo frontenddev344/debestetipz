@@ -120,6 +120,9 @@ header ul li a {
 }
 
 @media(max-width:767px){
+    html{
+        font-size: 14px;
+    }
     header, header.sticky  {
         padding: 20px 20px;
         background: #fff;
