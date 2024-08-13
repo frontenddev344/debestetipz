@@ -73,6 +73,7 @@ header.sticky
 {
     padding: 20px 100px;
     background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 header.sticky ul li a,
 header.sticky .logo
@@ -115,6 +116,10 @@ header nav ul li a:hover,
 header nav ul li a.active
 {
     border-bottom: 2px solid #fff;
+}
+header.sticky ul li a:hover,
+header.sticky ul li a.active{
+    border-color: #000;
 }
 .menuToggle
 {
@@ -254,9 +259,9 @@ opacity: 0.4;
     transform: scale(1.02);
 
 }
-.link-box{
-    /* padding: 0 100px; */
-}
+/* .link-box{
+    padding: 0 100px;
+} */
 /* link card css end */
 
 /* Recommended  section css start */
@@ -368,3 +373,181 @@ opacity: 0.4;
     position: relative;
 }
 /* newsletter section css end */
+
+/* choose us section css start */
+.services-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 20px;
+}
+
+.service-image {
+    flex: 1;
+    position: relative;
+    margin-right: 20px;
+}
+
+.service-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.service-img.active {
+    display: block;
+}
+
+.service-tabs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.service-item h3 {
+    margin: 0;
+    font-size: 20px;
+}
+.service-item p {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.service-item.active {
+    background-color: #00b8a9;
+    color: #fff;
+}
+
+.service-item.active h3 {
+    color: #fff;
+}
+
+.service-item.active p {
+    color: #fff;
+}
+
+.service-item:hover {
+    background-color: #00b8a9;
+}
+.service-item:hover h3, .service-item:hover p{
+    color: #ffff;
+}
+.site-heading h2 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #000;
+}
+/* choose us section css end */
+
+/* faq section css start */
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+    transition: all 0.5s;
+    filter: brightness(0) invert(1);
+}
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+  }
+  .accordion-button::after {
+    transition: all 0.5s;
+  }
+  
+  .accordion-item {
+    background-color: #fff;
+    border: 2px solid rgb(0 184 169);
+    margin: 10px 0;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+.accordion-item:not(:first-of-type) {
+    border-top: 2px solid rgb(0 184 169);
+}
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #00b8a9;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    border-color: #00b8a9;
+    box-shadow: none;
+}
+.accordion-button {
+    color: #ffffff;
+    background-color: #00b8a9;
+    font-size: 18px;
+}
+.faq-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* faq section css end */
+
+/* footer  section css start */
+.footer-logo img {
+    max-width: 250px;
+}
+.site-footer {
+    text-align: center;
+}
+.social-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+.social-links ul li a {
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #00b8a9;
+    border-radius: 50px;
+    color: #00b8a9;
+}
+.site-footer{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.footer-links ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    color: #000;
+}
+.copy-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    margin-top: 30px;
+    
+}
+.copy-right p{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+/* footer section css end */

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Services</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+}
+
+.services-section {
+    text-align: center;
+    margin: 50px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 20px;
+}
+
+.service-image {
+    flex: 1;
+    position: relative;
+    margin-right: 20px;
+}
+
+.service-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.service-img.active {
+    display: block;
+}
+
+.service-tabs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.service-item h3 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.service-item.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.service-item.active h3 {
+    color: #fff;
+}
+
+.service-item.active p {
+    color: #ddd;
+}
+
+.service-item:hover {
+    background-color: #e0e0e0;
+}
+
+</style>
+</head>
+<body>
+    <section class="services-section">
+        <h2>OUR AWESOME SERVICES</h2>
+        <p>Check out our awesome services</p>
+        <div class="services-container">
+            <div class="service-image">
+                <img src="assets/images/hero-banner.jpg" alt="Spa - Beauty & Health" class="service-img active">
+                <img src="assets/images/Recommended-Card-1.jpg" alt="Restaurant" class="service-img">
+                <img src="assets/images/hero-banner.jpg" alt="Conference Room" class="service-img">
+                <img src="assets/images/hero-banner.jpg" alt="Swimming Pool" class="service-img">
+                <img src="assets/images/Recommended-Card-1.jpg" alt="Restaurant" class="service-img">
+            </div>
+            <div class="service-tabs">
+                <div class="service-item active" data-target="0">
+                    <h3>Uitgebreide selectie</h3>
+                    <p>Van luxe 5-sterrenaccommodaties tot budgetvriendelijke 3-sterrenverblijven en
+                        opwindende casinohotels: wij bieden een uitgebreide selectie die is afgestemd op de
+                        behoeften van elke reiziger. Vind eenvoudig de perfecte accommodatie in Nederland!</p>
+                </div>
+                <div class="service-item" data-target="1">
+                    <h3>Exclusieve aanbiedingen</h3>
+                    <p>Profiteer van onze partnerschappen met tophotelmerken om exclusieve aanbiedingen en
+                        concurrerende tarieven te garanderen. Profiteer van speciale kortingen en promoties die u
+                        nergens anders vindt, zodat u zeker weet dat u waar voor uw geld krijgt.</p>
+                </div>
+                <div class="service-item" data-target="2">
+                    <h3>Deskundige beoordelingen en beoordelingen</h3>
+                    <p>Neem weloverwogen beslissingen met toegang tot gedetailleerde recensies en
+                        beoordelingen van medereizigers. Onze beoordelingen zijn samengesteld om echte
+                        feedback over hotels te geven, zodat u het perfecte verblijf kunt kiezen op basis van echte
+                        
+                        ervaringen.</p>
+                </div>
+                <div class="service-item" data-target="3">
+                    <h3>Eenvoudig boekingsproces</h3>
+                    <p>Ons gebruiksvriendelijke boekingsplatform maakt het eenvoudig om met slechts een paar
+                        klikken hotels te zoeken, vergelijken en boeken. Geniet van begin tot eind van een
+                        naadloze ervaring met ons intuïtieve en veilige boekingssysteem.</p>
+                </div>
+                <div class="service-item" data-target="4">
+                    <h3>Uitgebreide informatie</h3>
+                    <p>Krijg toegang tot uitgebreide hotelinformatie, inclusief voorzieningen, kamertypes en lokale
+                        bezienswaardigheden. Wij bieden alle details die u nodig heeft om een weloverwogen
+                        
+                        keuze te maken, zodat uw verblijf aan uw verwachtingen voldoet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const serviceItems = document.querySelectorAll('.service-item');
+    const serviceImages = document.querySelectorAll('.service-img');
+
+    serviceItems.forEach((item, index) => {
+        item.addEventListener('click', function() {
+            // Remove active class from all items and images
+            serviceItems.forEach(i => i.classList.remove('active'));
+            serviceImages.forEach(img => img.classList.remove('active'));
+
+            // Add active class to the clicked item and corresponding image
+            item.classList.add('active');
+            serviceImages[index].classList.add('active');
+        });
+    });
+});
+
+</script>
+</body>
+</html>
