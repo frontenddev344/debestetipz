@@ -170,4 +170,7 @@ header ul li a {
         flex-direction: column;
         text-align: center;
     }
+    .service-image {
+        height: 300px;
+    }
 }
