@@ -111,15 +111,17 @@ header ul li a
     border-bottom: 2px solid transparent;
 
 }
-
+header nav ul li a:hover{
+    color: #00b8a9;
+}
 header nav ul li a:hover,
 header nav ul li a.active
 {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #00b8a9;
 }
 header.sticky ul li a:hover,
 header.sticky ul li a.active{
-    border-color: #000;
+    border-color: #00b8a9;
 }
 .menuToggle
 {
@@ -215,6 +217,13 @@ opacity: 0.4;
     font-weight: 500;
     text-transform: uppercase;
     border: 1px solid #00b8a9;
+    transition: all 0.3s linear;
+
+}
+
+a.moreless-button:hover, .visit-btns a:hover{
+ background-color: transparent;
+ color: #00b8a9;   
 }
 /* banner section css end */
 
@@ -266,11 +275,18 @@ opacity: 0.4;
 /* Recommended  section css start */
 .recommended-img {
     height: 350px;
+    overflow: hidden;
+
+}
+.recommended-img:hover img{
+    transform: scale(1.05);
 }
 .recommended-img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: all 0.3s linear;
+
 }
 .recommended-text h3 {
     font-size: 1.75rem;
@@ -301,6 +317,11 @@ opacity: 0.4;
     background-color: transparent;
     color: #00b8a9;
     border: 1px solid #00b8a9;
+
+}
+a.morelesss-button:hover{
+    color: #fff;
+    background-color: #00b8a9;
 
 }
 .visit-btns{
@@ -543,6 +564,12 @@ opacity: 0.4;
     border: 2px solid #00b8a9;
     border-radius: 50px;
     color: #00b8a9;
+    transition: all 0.3s linear;
+
+}
+.social-links ul li a:hover{
+    background-color: #00b8a9;
+    color: #fff;
 }
 .site-footer{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -556,6 +583,10 @@ opacity: 0.4;
 .footer-links ul li a {
     font-size: 1.125rem;
     color: #000;
+    transition: all 0.3s linear;
+}
+.footer-links ul li a:hover{
+    color: #00b8a9;
 }
 .copy-right {
     display: flex;
