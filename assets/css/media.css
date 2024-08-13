@@ -20,6 +20,12 @@ header.sticky {
 header ul li a {
     padding: 0 10px;
 }
+section.banner.sub-banner {
+    height: 470px;
+}
+.sub-banner .banner-text h1 {
+    font-size: 2.5125rem;
+}
 }
 
 
@@ -134,6 +140,9 @@ header ul li a {
         width: 2rem;
         height: 2rem;
         background-size: 2rem;
+    }
+    section.banner.sub-banner {
+        height: 450px;
     }
 }
 
