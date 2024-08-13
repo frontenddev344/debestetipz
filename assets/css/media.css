@@ -130,5 +130,44 @@ header ul li a {
     .menuToggle {
         right: 20px;
     }
+    .accordion-button::after {
+        width: 2rem;
+        height: 2rem;
+        background-size: 2rem;
+    }
+}
 
+@media(max-width:575px){
+    .link-wrap {
+        height: 300px;
+    }
+    .copy-right {
+        flex-direction: column-reverse;
+    }
+    .footer-links {
+        margin-bottom: 10px;
+    }
+    .service-image {
+        height: 350px;
+    }
+}
+
+@media(max-width:375px){
+    .banner {
+        height: 55vh;
+    }
+    .banner-text h1 {
+        font-size: 2.8rem;
+    }
+    .link-wrap, .recommended-img {
+        height: 250px;
+    }
+    .recommended-text {
+        padding: 15px 15px 15px;
+    }
+    .visit-btns {
+        position: inherit;
+        flex-direction: column;
+        text-align: center;
+    }
 }
