@@ -119,3 +119,13 @@ header ul li a {
     }
 }
 
+@media(max-width:767px){
+    header, header.sticky  {
+        padding: 20px 20px;
+        background: #fff;
+    }
+    .menuToggle {
+        right: 20px;
+    }
+
+}
