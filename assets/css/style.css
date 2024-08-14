@@ -111,7 +111,7 @@ header ul li a
     border-bottom: 2px solid transparent;
 
 }
-header nav ul li a:hover{
+header nav ul li a:hover, header nav ul li a.active{
     color: #00b8a9;
 }
 header nav ul li a:hover,

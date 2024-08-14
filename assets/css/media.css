@@ -182,4 +182,7 @@ section.banner.sub-banner {
     .service-image {
         height: 300px;
     }
+    section.banner.sub-banner {
+        height: 420px;
+    }
 }
