@@ -82,7 +82,7 @@ header.sticky .logo
     color: #000;
 }
 a.logo img {
-    max-width: 200px;
+    max-width: 220px;
 }
 header ul
 {
@@ -139,10 +139,7 @@ header.sticky ul li a.active{
     transition: .6s;
     display: none;
 }
-header.sticky .menuToggle
-{
-    /* filter: invert(1); */
-}
+
 .menuToggle.active
 {
     background: url(../images/close.png);
@@ -151,7 +148,6 @@ header.sticky .menuToggle
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    /* filter: invert(1); */
     
 }
 /* header section css end */
@@ -629,7 +625,7 @@ section.banner.sub-banner {
     margin-bottom: 0;
 }
 .privacy-wrap p{
-    font-size: 1rem;
+    font-size: 1.125rem;
     color: #1f1f1f;
     margin-bottom: 10px;
 }

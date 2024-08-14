@@ -159,6 +159,9 @@ section.banner.sub-banner {
     .service-image {
         height: 350px;
     }
+    a.logo img {
+        max-width: 190px;
+    }
 }
 
 @media(max-width:375px){
