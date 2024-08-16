@@ -401,6 +401,10 @@ a.morelesss-button:hover{
   align-items: center;
   justify-content: center;
 }
+.form-subscribe .btn:hover{
+    background-color: #f97c5d;
+    border-color: #f97c5d;
+}
 .news-letter{
     background-image: url(https://i.ibb.co/JRrHmhv/shanghai.jpg);
     background-position: center;
@@ -649,3 +653,31 @@ padding: 2px 0;
     padding: 20px 0;
 }
 /* sub pages css end */
+
+.cookie-alert {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 320px;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+  }
+  
+  .cookie-alert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+  }
+
+  .cookie-alert .btn-primary {
+    color: #fff;
+    background-color: #00b8a9;
+    border-color: #00b8a9;
+}
+.cookie-alert .btn-primary:hover{
+    background-color: transparent;
+    color: #00b8a9;
+}

@@ -193,4 +193,8 @@ section.banner.sub-banner {
     section.banner.sub-banner {
         height: 420px;
     }
+    .cookie-alert {
+        right: 10px;
+        width: 300px;
+    }
 }
