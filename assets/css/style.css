@@ -397,6 +397,9 @@ a.morelesss-button:hover{
   background:#00b8a9;
   border-color:#00b8a9;
   height:46.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .news-letter{
     background-image: url(https://i.ibb.co/JRrHmhv/shanghai.jpg);

@@ -162,6 +162,11 @@ section.banner.sub-banner {
     a.logo img {
         max-width: 190px;
     }
+    .link-wrap h5 {
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media(max-width:375px){
