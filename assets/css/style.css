@@ -105,7 +105,7 @@ header ul li a
     color: #fff;
     letter-spacing: 2px;
     font-size: 1.125rem;
-    font-weight: 500;
+    font-weight: 700;
     transition: all 0.3s linear;
     display: block;
     border-bottom: 2px solid transparent;
@@ -204,7 +204,7 @@ opacity: 0.4;
 .moretext {
     display: none;
   }
-  a.moreless-button, a.morelesss-button, .visit-btns a {
+  a.morelesss-button, .visit-btns a {
     padding: 10px 30px;
     background-color: #00b8a9;
     display: inline-block;
@@ -216,7 +216,10 @@ opacity: 0.4;
     transition: all 0.3s linear;
 
 }
-
+a.moreless-button {
+    font-size: 25px;
+    color: #00b8a9;
+}
 a.moreless-button:hover, .visit-btns a:hover{
  background-color: transparent;
  color: #00b8a9;   
@@ -680,4 +683,54 @@ padding: 2px 0;
 .cookie-alert .btn-primary:hover{
     background-color: transparent;
     color: #00b8a9;
+}
+
+.tour-wrap{
+    background-image: url(../images/tour-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+.tour-wrap::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-color: #00b8a9;
+    opacity: 0.3;
+    transition: all 0.3s linear;
+
+}
+.tour-wrap:hover::before{
+    height: 100%;
+}
+.tour-text h3 {
+    font-size: 1.5625rem;
+    color: #fff;
+    margin-bottom: 0;
+}
+.tour-text {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #00b8a9;
+    position: relative;
+    z-index: 1;
+}
+.recommended-text p a {
+    color: #000;
+    text-decoration: underline;
+}
+.casino-sec .recommended-text {
+    padding: 20px;
+}
+.site-heading h2 {
+    padding: 0 20px;
 }

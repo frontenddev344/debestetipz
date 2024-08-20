@@ -20,15 +20,23 @@ window.addEventListener("scroll",function(){
     
 })
 
+// $('.moreless-button').click(function() {
+//     $('.moretext').slideToggle();
+//     if ($('.moreless-button').text() == "Lees meer") {
+//       $(this).text("Lees minder")
+//     } else {
+//       $(this).text("Lees meer")
+//     }
+//   });
 $('.moreless-button').click(function() {
-    $('.moretext').slideToggle();
-    if ($('.moreless-button').text() == "Lees meer") {
-      $(this).text("Lees minder")
-    } else {
-      $(this).text("Lees meer")
-    }
-  });
-
+  $('.moretext').slideToggle();
+  
+  if ($(this).html() == '<i class="fa-solid fa-angle-down"></i>') {
+    $(this).html('<i class="fa-solid fa-angle-up"></i>');
+  } else {
+    $(this).html('<i class="fa-solid fa-angle-down"></i>');
+  }
+});
   // $('.morelesss-button').click(function() {
   //   $('.moretextt').slideToggle();
   //   if ($('.morelesss-button').text() == "Read more") {
